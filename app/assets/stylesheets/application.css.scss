@@ -94,7 +94,7 @@ body {
 	margin-bottom: 50px;
 }
 
-#dog_info, #ingredients, #directions {
+#dog_info, #walker_notes, #instructions {
 	background: white;
 	@include box-shadow;
 	min-height: 360px;
@@ -120,7 +120,7 @@ body {
 	}
 }
 
-#ingredients, #directions {
+#walker_notes, #instructions {
 	margin-bottom: 50px;
 	ul, ol {
 		padding-left: 18px;
