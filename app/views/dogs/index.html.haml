@@ -1,4 +1,9 @@
-- @dog.each do |dog|
-	= link_to dog do
-		= image_tag dog.image.url(:medium)
-	%h2= link_to dog.name, dog 
+- @dog.each_slice(3) do |dogs|
+	.row
+		- dogs.each do |dog|
+			.col-md-4
+				.dog
+					.image_wrapper
+						= link_to dog do
+							= image_tag dog.image.url(:medium)
+					%h2= link_to dog.name, dog
