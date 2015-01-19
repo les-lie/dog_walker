@@ -1,0 +1,14 @@
+= simple_form_for @dog, html: {multipart: true } do |f|
+	- if @dog.errors.any?
+		#errors
+			%p
+				= @dog.errors.count
+				Prevented this Dog from being saved.
+			%ul
+				- @dog.errors.full_messages.each do |msg|
+					%li= msg		
+	.panel-body
+		= f.input :name, input_html: {class: 'form-control'}
+		= f.input :description, input_html: {class: 'form-control'}
+
+	= f.button :submit, class: "btn btn-primary"
