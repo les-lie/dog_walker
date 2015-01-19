@@ -34,7 +34,7 @@ class DogsController < ApplicationController
 
 	def destroy
 		@dog.destroy
-		redirct_to root_path, notice: "Sucessfully removed Dog. See ya, Dog!"
+		redirect_to root_path, notice: "Dog removed Sucessfully!"
 	end
 
 	private
