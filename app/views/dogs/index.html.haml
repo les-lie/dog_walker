@@ -1,2 +1,4 @@
 - @dog.each do |dog|
+	= link_to dog do
+		= image_tag dog.image.url(:medium)
 	%h2= link_to dog.name, dog 
